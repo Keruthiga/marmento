@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 85%;
+  height: 350px;
+  text-align: center;
+}
+.tab-box{
+  height: 15%;
+  width: 65%;
+  margin: 0 auto;
+}
+.tab-box .tab_btn{
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #eee;
+}
+
+.tab-box .tab_btn.active{
+  background-color: #000;
+  color: #fff;
+}
+.category-tab{
+ display: none;
+ margin-top: 20px;
+}
+.category-tab.active{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; 
+}
+.item-container{
+  width: 100%;
+}
+.item-container img{
+  height: 300px;
+  width:100%;
+}
+.item-detail{
+  text-align: left;
+}
+.item-detail .item-name,
+.item-detail .item-price,
+.item-detail .cart-btn{
+  margin: 2px 0;
+}
+.item-vendor{
+  font-size: 16px;
+  font-weight: 100;
+}
+.item-price .compare-price{
+  color: #808080;
+  text-decoration: line-through;
+}
+.item-price .offer-price{
+  color: red;
+}
+.cart-btn{
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.tab {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; 
+  margin: 2rem 0;
+  justify-content: center;
+}
